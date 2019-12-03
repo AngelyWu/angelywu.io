@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Aclonica|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Radley&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #d86bab;
+  --dark: #81196d;
+  --light: #ffbfff;
+  --lighter: #fcf8fc;
+  --grey: #ddd;
+  --greydark: rgb(90, 90, 90);
+  --black: #333;
+  --white: #fff;
+  --bg-dark: #373737;
+  --bg-light: #efefef;
+}
+
+.home-logo {
+  font-family: "Aclonica", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: -0.03em;
+}
+
+.landing-page {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/landing.jpg) no-repeat;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  color: var(--white);
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rows {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.main h2 {
+  width: 50%;
+  font-family: "Radley", serif;
+  font-size: 4.5em;
+  font-weight: 600;
+}
+
+footer {
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 767px) {
+  .main h2 {
+    font-size: 2.5em;
+  }
+}
